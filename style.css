@@ -1,3 +1,11 @@
-#mymapid {
-    height: 180px;
+/* Use full window size div for the map */
+#myMapDiv {
+    width:  100dvw;
+    height: 100dvh;
+}
+
+/* Remove body padding */
+body {
+    padding: 0px;
+    margin: 0px;
 }
