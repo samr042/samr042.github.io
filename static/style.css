@@ -1,11 +1,54 @@
+/* Remove body padding */
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
 /* Use full window size div for the map */
 #myMapDiv {
     width:  100dvw;
     height: 95dvh;
 }
 
-/* Remove body padding */
-body {
-    padding: 0px;
+#placeTitle {
+    height: 5dvh;
+    font-size: 4dvh;
+    padding-left: 1dvw;
     margin: 0px;
+    text-align: center;
 }
+
+#showMapButton {
+    position: fixed;
+    bottom:0;
+    width: 100dvw;
+    z-index: 100;
+    height: 4dvh;
+}
+
+.carousel .carousel-item img {
+    max-height: 91dvh;
+    width: auto;
+    object-fit: contain;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+    height: 91dvh;
+}
+
+.carousel-control-prev {
+    padding-left: 1dvw !important;
+    justify-content: start !important;
+}
+
+.carousel-control-next {
+    padding-right: 1dvw !important;
+    justify-content: end !important;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    opacity: 100%;
+;}
