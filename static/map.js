@@ -36,6 +36,19 @@ function onMarkerClick (loc, country, loc_id){
 
     // Add info of the place
     $("#placeTitle").text(loc.name);
+    // Set number of pictures
+    var loc_picture_urls = COUNTRY_DATA[country][loc_id].pictures;
+    $("#numPics").text("(" + loc_picture_urls.length + ")");
+    $("#numPics").show()
+
+    if (loc_picture_urls.length > 1) {
+        $("#carouselPrevButton").show();
+        $("#carouselNextButton").show();
+    } else {
+        $("#carouselPrevButton").hide();
+        $("#carouselNextButton").hide();
+    };
+
     // $("#divCarousel").show()
     $("#showMapButton").show()
 
@@ -46,8 +59,6 @@ function onMarkerClick (loc, country, loc_id){
     var new_carousel = document.createElement("div");
     new_carousel.setAttribute("class", "carousel-inner");
     new_carousel.setAttribute("id", "place_specific_carousel");
-
-    var loc_picture_urls = COUNTRY_DATA[country][loc_id].pictures;
 
     loc_picture_urls.forEach((pic_url, idx) => {
         var new_carousel_item = document.createElement("div");
