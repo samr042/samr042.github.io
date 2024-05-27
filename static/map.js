@@ -103,6 +103,8 @@ window.addEventListener('DOMContentLoaded', () => {
         $("#outerCarouselDiv").hide();
         // Remove number that shows picture count
         $("#numPics").hide()
+        // Make sure resize is reflected on the map
+        $("#myMapDiv").invalidateSize(true);
     });
 });
 
