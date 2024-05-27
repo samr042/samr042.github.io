@@ -101,6 +101,8 @@ window.addEventListener('DOMContentLoaded', () => {
         $("#place_specific_carousel").remove();
         // Hide entire carousel with pictures
         $("#outerCarouselDiv").hide();
+        // Remove number that shows picture count
+        $("#numPics").hide()
     });
 });
 
