@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <!-- Bootstrap 5 https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="../static/style.css">
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-4.0.0-beta.slim.min.js"></script>
+
+        <title>ShoSa in SEA</title>
+
+        <!-- Leaflet stuff https://leafletjs.com/examples/quick-start/ -->
+        <!-- Leaflet CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+         <!-- Make sure you put this AFTER Leaflet's CSS -->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+
+        <!-- Location data -->
+        <script src="../static/data.js"></script>
+        <!-- Custom map script -->
+        <script src="../static/map.js"></script>
+    </head>
+
+    <body>
+        <div id="placeTitleDiv">
+            <h2 id="topH2"><span id="placeTitle">Selecteer een plek</span><sup id="numPics" style="display: none;"></sup></h2>
+        </div>
+
+        <div id="outerCarouselDiv" style="display: none;">
+            <div id="placeCarousel" class="carousel slide" data-bs-interval="false">
+                <button class="carousel-control-prev" type="button" data-bs-target="#placeCarousel"
+                    data-bs-slide="prev" id="carouselPrevButton">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#placeCarousel"
+                    data-bs-slide="next" id="carouselNextButton">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div id="myMapDiv"></div>
+
+        <button id="showMapButton" style="display: none;">
+            Terug naar kaart
+        </button>
+    </body>
+
+    <script>
+        mapInit("Indonesia")
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</html>
