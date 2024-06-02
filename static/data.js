@@ -7,7 +7,10 @@ const COUNTRY_DATA = {
                 "/static/images/indonesia/orangSawah1.webp",
                 "/static/images/indonesia/orangSawah2.webp",
                 "/static/images/indonesia/orangSawah3.webp",
-                "/static/images/indonesia/orangSawah4.webp"
+                "/static/images/indonesia/orangSawah4.webp",
+                "/static/images/indonesia/orangSawah5.webp",
+                "/static/images/indonesia/orangSawah6.webp",
+                "/static/images/indonesia/orangSawah7.webp"
             ]
         }, "indo2": {
             "name": "Balijana Bungalow (Lovina)",
@@ -25,32 +28,25 @@ const COUNTRY_DATA = {
             "latlng": [-8.361928371, 115.1321663],
             "pictures": [
                 "/static/images/indonesia/jatiluwih1.webp",
-                // "",
-                // ""
             ]
         }, "indo5": {
             "name": "Ulun Danu Beratan Temple",
             "latlng": [-8.26614186, 115.167489],
             "pictures": [
                 "/static/images/indonesia/beratan1.webp",
-                // "",
-                // ""
             ]
         }, "indo6": {
             "name": "Olympus Coffee Bali",
             "latlng": [-8.272835968, 115.3475925],
             "pictures": [
                 "/static/images/indonesia/olympusCoffee1.webp",
-                // "",
-                // ""
+                "/static/images/indonesia/olympusCoffee2.webp",
             ]
         }, "indo7": {
             "name": "Balinese Home Cooking",
             "latlng": [-8.4817163, 115.2488181],
             "pictures": [
                 "/static/images/indonesia/balineseHomeCooking1.webp",
-                // "",
-                // ""
             ]
         }, "indo8": {
             "name": "Gunung Kawi Tampaksiring",
@@ -61,12 +57,25 @@ const COUNTRY_DATA = {
                 "/static/images/indonesia/tampaksiring3.webp"
             ]
         }, "indo9": {
-            "name": "Ubud Centrum",
+            "name": "Ubud",
             "latlng": [-8.5073306, 115.2632216],
             "pictures": [
                 "/static/images/indonesia/ubud1.webp",
-                // "",
-                // ""
+                "/static/images/indonesia/ubud2.webp",
+            ]
+        }, "indo10": {
+            "name": "The Local Entikentikan (Bangli)",
+            "latlng": [-8.4339797, 115.3732631],
+            "pictures": [
+                "/static/images/indonesia/bangli1.webp",
+                "/static/images/indonesia/bangli2.webp",
+            ]
+        }, "indo11": {
+            "name": "Goa Raja Waterfall (Bangli)",
+            "latlng": [-8.4417744, 115.3760372],
+            "pictures": [
+                "/static/images/indonesia/goaRaja1.webp",
+                "/static/images/indonesia/goaRaja2.webp",
             ]
         }
     },
@@ -91,7 +100,6 @@ const COUNTRY_DATA = {
             "latlng": [5.8372444, 118.1032113],
             "pictures": [
                 "/static/images/malaysia/number1Roastery1.webp",
-                // ""
             ]
         },
         "my4": {
@@ -99,7 +107,6 @@ const COUNTRY_DATA = {
             "latlng": [5.491415, 118.1826725],
             "pictures": [
                 "/static/images/malaysia/sukauGreenview1.webp",
-                // ""
             ]
         },
         "my5": {
@@ -112,8 +119,24 @@ const COUNTRY_DATA = {
                 "/static/images/malaysia/kinabatanganRiver4.webp",
                 "/static/images/malaysia/kinabatanganRiver5.webp",
             ]
+        },
+        "my6": {
+            "name": "The Pines (Melaka)",
+            "latlng": [2.2046961,102.2513394],
+            "pictures": [
+                "/static/images/malaysia/thePines1.webp",
+                "/static/images/malaysia/thePines2.webp",
+            ]
+        },
+        "my7": {
+            "name": "Melaka",
+            "latlng": [2.194425, 102.248608],
+            "pictures": [
+                "/static/images/malaysia/melaka1.webp",
+                "/static/images/malaysia/melaka2.webp",
+                "/static/images/malaysia/melaka3.webp",
+                "/static/images/malaysia/melaka4.webp",
+            ]
         }
     }
 }
-
-console.log("data loaded")
