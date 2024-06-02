@@ -20,14 +20,6 @@ const COUNTRY_DATA = {
                 "/static/images/indonesia/lovina5.webp",
                 "/static/images/indonesia/lovina6.webp"
             ]
-        // }, "indo3": {
-        //     "name": "The Local Entikentikan (Bangli)",
-        //     "latlng": [-8.433213224, 115.3740159],
-        //     "pictures": [
-        //         "",
-        //         "",
-        //         ""
-        //     ]
         }, "indo4": {
             "name": "Jatiluwih Rice Terraces",
             "latlng": [-8.361928371, 115.1321663],
@@ -75,6 +67,50 @@ const COUNTRY_DATA = {
                 "/static/images/indonesia/ubud1.webp",
                 // "",
                 // ""
+            ]
+        }
+    },
+    "Malaysia": {
+        "my1": {
+            "name": "Floating Mosque (Kota Kinabalu)",
+            "latlng": [5.9954691, 116.1051852],
+            "pictures": [
+                "/static/images/malaysia/floatingMosque1.webp"
+            ]
+        },
+        "my2": {
+            "name": "Manukan Island (Kota Kinabalu)",
+            "latlng": [5.9742612, 115.9955651],
+            "pictures": [
+                "/static/images/malaysia/manukanIsland1.webp",
+                "/static/images/malaysia/manukanIsland2.webp"
+            ]
+        },
+        "my3": {
+            "name": "#1 Roastery (Sandakan)",
+            "latlng": [5.8372444, 118.1032113],
+            "pictures": [
+                "/static/images/malaysia/number1Roastery1.webp",
+                // ""
+            ]
+        },
+        "my4": {
+            "name": "Sukau Greenview (Kinabatangan)",
+            "latlng": [5.491415, 118.1826725],
+            "pictures": [
+                "/static/images/malaysia/sukauGreenview1.webp",
+                // ""
+            ]
+        },
+        "my5": {
+            "name": "Kinabatangan River",
+            "latlng": [5.550729, 118.321025],
+            "pictures": [
+                "/static/images/malaysia/kinabatanganRiver1.webp",
+                "/static/images/malaysia/kinabatanganRiver2.webp",
+                "/static/images/malaysia/kinabatanganRiver3.webp",
+                "/static/images/malaysia/kinabatanganRiver4.webp",
+                "/static/images/malaysia/kinabatanganRiver5.webp",
             ]
         }
     }
