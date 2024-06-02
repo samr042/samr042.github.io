@@ -1,4 +1,4 @@
-function mapInit () {
+function mapInit (useCountry=false) {
     var map = L.map('myMapDiv').setView([51.505, -0.09], 13);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -9,7 +9,13 @@ function mapInit () {
 
     var markerGroup = new L.featureGroup()
 
-    for (const [country, locations] of Object.entries(COUNTRY_DATA)) {
+    if (useCountry) {
+        USE_COUNTRY_DATA = {useCountry:COUNTRY_DATA[useCountry]}
+    } else {
+        USE_COUNTRY_DATA = COUNTRY_DATA
+    }
+
+    for (const [country, locations] of Object.entries(USE_COUNTRY_DATA)) {
         for (const [loc_id, loc] of Object.entries(locations)) {
             var currentMarker = new L
                 .marker(loc.latlng, {title:loc.name})
