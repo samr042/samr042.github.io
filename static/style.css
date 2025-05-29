@@ -7,7 +7,12 @@ body {
 /* Use full window size div for the map */
 #myMapDiv {
     width:  100dvw;
-    height: 95dvh;
+    height: 90dvh;
+}
+
+#countrySelector {
+    width:  100dvw;
+    height: 5dvh;
 }
 
 #topH2 {

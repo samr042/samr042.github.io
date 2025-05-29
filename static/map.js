@@ -37,8 +37,9 @@ function mapInit (useCountry=false) {
 };
 
 function onMarkerClick (loc, country, loc_id){
-    // Hide the fullsize map
+    // Hide the fullsize map & country buttons
     $("#myMapDiv").hide()
+    $("#countrySelector").hide()
 
     // Add info of the place
     $("#placeTitle").text(loc.name);
@@ -100,6 +101,8 @@ window.addEventListener('DOMContentLoaded', () => {
         $("#showMapButton").hide();
         // Show the map again
         $("#myMapDiv").show();
+        // Show the country buttons again
+        $("#countrySelector").show();
         // Revert title text
         $("#placeTitle").text("Select a place");
 
