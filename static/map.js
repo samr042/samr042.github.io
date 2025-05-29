@@ -34,6 +34,49 @@ function mapInit (useCountry=false) {
         };
     };
     map.fitBounds(markerGroup.getBounds());
+
+    /// https://medium.com/@limeira.felipe94/highlighting-countries-on-a-map-with-leaflet-f84b7efee0a9
+    function highlightFeature(e) {
+        const layer = e.target;
+        layer.setStyle({
+            weight: 5,
+            color: 'yellow',
+            fillColor: 'yellow',
+            dashArray: '',
+            fillOpacity: 0.7
+        });
+    }
+
+    function resetHighlight(e) {
+        geojson.resetStyle(e.target);
+    }
+
+    function onEachFeature(feature, layer) {
+        layer.on({
+            mouseover: highlightFeature,
+            mouseout: resetHighlight,
+            click: zoomToFeature
+        });
+    }
+
+    function zoomToFeature(e) {
+        map.fitBounds(e.target.getBounds(), { padding: [50, 50] });
+    }
+
+    let geojson;
+    // https://geojson-maps.kyd.au
+    fetch('/static/custom.geojson')
+        .then(response => response.json())
+        .then(data => {
+            geojson = L.geoJson(data, {
+                // style: style,
+                onEachFeature: onEachFeature
+            }).addTo(map);
+        })
+        .catch(error => {
+            console.error('Error loading GeoJSON on Main Map:', error);
+        });
+    /// end
 };
 
 function onMarkerClick (loc, country, loc_id){
@@ -92,6 +135,8 @@ function onMarkerClick (loc, country, loc_id){
     // Show carousel with pictures
     $("#outerCarouselDiv").show()
 };
+
+
 
 window.addEventListener('DOMContentLoaded', () => {
     var btn = document.getElementById("showMapButton");

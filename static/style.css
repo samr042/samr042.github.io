@@ -11,9 +11,20 @@ body {
 }
 
 #countrySelector {
-    width:  100dvw;
+    position: fixed;
+    bottom:0;
+    width: 100dvw;
+    z-index: 100;
     height: 5dvh;
+    align-items: center;
 }
+
+#countryButton {
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 
 #topH2 {
     height: 5dvh;
