@@ -101,7 +101,7 @@ window.addEventListener('DOMContentLoaded', () => {
         // Show the map again
         $("#myMapDiv").show();
         // Revert title text
-        $("#placeTitle").text("Selecteer een plek");
+        $("#placeTitle").text("Select a place");
 
         // Remove existing carousel
         $("#place_specific_carousel").remove();
